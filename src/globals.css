@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
+
+@layer base {
+    :root {
+        /* Light Theme Colors */
+        --background: 0 0% 100%;
+        --foreground: 0 0% 10%;
+        --primary: 210 100% 20%;
+        --primary-foreground: 210 100% 98%;
+        --secondary: 210 100% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+        --accent: 220 100% 50%;
+        --accent-foreground: 0 0% 100%;
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 217.2 91.2% 59.8%;
+        --success: 134 61% 41%;
+        --destructive: 0 84.2% 60.2%;
+        --radius: 0.5rem;
+    
+        /* Text Colors */
+        --text-primary: 0 0% 0%;  /* Black primary text for light mode */
+        --text-muted: 0 0% 50%;   /* Muted gray for secondary text */
+    }
+    
+    .dark {
+        /* Dark Theme Colors */
+        --background: 210 20% 10%;
+        --foreground: 210 100% 98%;
+        --primary: 210 100% 80%;
+        --primary-foreground: 210 100% 20%;
+        --secondary: 210 100% 25%;
+        --secondary-foreground: 210 100% 90%;
+        --accent: 220 100% 70%;
+        --accent-foreground: 0 0% 100%;
+        --border: 210 20% 30%;
+        --input: 210 20% 35%;
+        --ring: 217.2 91.2% 69.8%;
+        --success: 134 61% 51%;
+        --destructive: 0 62.8% 50.6%;
+        
+        /* Text Colors */
+        --text-primary: 210 100% 98%;  /* White primary text for dark mode */
+        --text-muted: 210 100% 70%;   /* Lighter gray for secondary text */
+    }
+    
+    
+}
+
+
