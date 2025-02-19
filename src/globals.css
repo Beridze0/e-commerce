@@ -11,44 +11,59 @@ body {
         /* Light Theme Colors */
         --background: 0 0% 100%;
         --foreground: 0 0% 10%;
-        --primary: 210 100% 20%;
-        --primary-foreground: 210 100% 98%;
-        --secondary: 210 100% 96.1%;
-        --secondary-foreground: 222.2 47.4% 11.2%;
-        --accent: 220 100% 50%;
-        --accent-foreground: 0 0% 100%;
-        --border: 220 13% 91%;
-        --input: 220 13% 91%;
-        --ring: 217.2 91.2% 59.8%;
-        --success: 134 61% 41%;
-        --destructive: 0 84.2% 60.2%;
+        --primary: 0 0% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96%;
+        --secondary-foreground: 0 0% 25%;
+        --accent: 0 0% 85%;
+        --accent-foreground: 0 0% 10%;
+        --border: 0 0% 85%;
+        --input: 0 0% 90%;
+        --ring: 0 0% 30%;
+        --success: 120 3% 30%;
+        --destructive: 0 60% 50%;
         --radius: 0.5rem;
     
         /* Text Colors */
-        --text-primary: 0 0% 0%;  /* Black primary text for light mode */
-        --text-muted: 0 0% 50%;   /* Muted gray for secondary text */
+        --text-primary: 0 0% 0%;
+        --text-muted: 0 0% 50%;
+        --text-inverted: 0 0% 100%;  /* White text in light mode */
+    
+        /* Hover Colors */
+        --hover-primary: 0 0% 20%;
+        --hover-secondary: 0 0% 95%;
+        --hover-accent: 0 0% 75%;
+        --hover-border: 0 0% 75%;
     }
     
     .dark {
         /* Dark Theme Colors */
-        --background: 210 20% 10%;
-        --foreground: 210 100% 98%;
-        --primary: 210 100% 80%;
-        --primary-foreground: 210 100% 20%;
-        --secondary: 210 100% 25%;
-        --secondary-foreground: 210 100% 90%;
-        --accent: 220 100% 70%;
-        --accent-foreground: 0 0% 100%;
-        --border: 210 20% 30%;
-        --input: 210 20% 35%;
-        --ring: 217.2 91.2% 69.8%;
-        --success: 134 61% 51%;
-        --destructive: 0 62.8% 50.6%;
-        
+        --background: 0 0% 10%;
+        --foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 10%;
+        --secondary: 0 0% 15%;
+        --secondary-foreground: 0 0% 80%;
+        --accent: 0 0% 30%;
+        --accent-foreground: 0 0% 98%;
+        --border: 0 0% 20%;
+        --input: 0 0% 25%;
+        --ring: 0 0% 60%;
+        --success: 120 3% 50%;
+        --destructive: 0 60% 40%;
+    
         /* Text Colors */
-        --text-primary: 210 100% 98%;  /* White primary text for dark mode */
-        --text-muted: 210 100% 70%;   /* Lighter gray for secondary text */
+        --text-primary: 0 0% 98%;
+        --text-muted: 0 0% 60%;
+        --text-inverted: 0 0% 0%; /* Black text in dark mode */
+    
+        /* Hover Colors */
+        --hover-primary: 0 0% 90%;
+        --hover-secondary: 0 0% 25%;
+        --hover-accent: 0 0% 40%;
+        --hover-border: 0 0% 35%;
     }
+    
     
     
 }

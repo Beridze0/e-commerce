@@ -22,9 +22,18 @@ export default {
         ring: "hsl(var(--ring))",
         success: "hsl(var(--success))",
         destructive: "hsl(var(--destructive))",
-        textPrimary: "hsl(var(--text-primary))",  /* Text primary color */
-        textMuted: "hsl(var(--text-muted))",      /* Text muted color */
-      }
+        textPrimary: "hsl(var(--text-primary))",
+        textMuted: "hsl(var(--text-muted))",
+        textInverted: "hsl(var(--text-inverted))", // Added for inverted text color
+    
+        /* Hover Colors */
+        hoverPrimary: "hsl(var(--hover-primary))",
+        hoverSecondary: "hsl(var(--hover-secondary))",
+        hoverAccent: "hsl(var(--hover-accent))",
+        hoverBorder: "hsl(var(--hover-border))",
+    }
+    
+    
     },
   },
   plugins: [],

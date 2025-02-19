@@ -1,4 +1,3 @@
-import { CircleUserRound, ShoppingCart } from "lucide-react"
 import { NavLink } from "react-router-dom"
 import TextField from "../ui/TextField"
 
@@ -14,10 +13,10 @@ const Navbar = () => {
                 <NavLink className="text-textMuted hover:text-textPrimary transition duration-200">Contact Us</NavLink>
             </div>
         </div>
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-4 text-sm">
             <TextField />
-            <CircleUserRound className="text-textPrimary cursor-pointer" size={19} />
-            <ShoppingCart className="text-textPrimary cursor-pointer" size={19} />
+            <p className="border rounded px-4 py-1 transition duration-200 hover:bg-hoverSecondary cursor-pointer">Profile</p>
+            <p className="border rounded px-4 py-1 bg-primary text-textInverted transition cursor-pointer duration-200 hover:bg-hoverPrimary">Cart</p>
         </div>
     </div>
   )
