@@ -4,21 +4,38 @@ import { SunMoon, Triangle, UserRound } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return JSON.parse(localStorage.getItem("dark-mode")) ?? false;
+  });
 
   useEffect(() => {
     if (darkMode) {
+      document.documentElement.classList.remove("light");
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
     }
   }, [darkMode]);
+
+  const switchTheme = () => {
+    setDarkMode((prev) => {
+      const isDarkMode = !prev;
+      localStorage.setItem("dark-mode", JSON.stringify(isDarkMode));
+
+      document.documentElement.classList.remove(isDarkMode ? "light" : "dark");
+      document.documentElement.classList.add(isDarkMode ? "dark" : "light");
+
+      return isDarkMode;
+    });
+  };
+
 
   return (
     <div className="w-full flex items-center justify-between px-14 py-8 bg-background border-b border-border h-14">
       <div className="flex gap-7 items-center justify-center">
         <div className="flex items-center justify-center gap-2">
-          <Triangle fill="white" size={25} className="text-primary" />
+          <Triangle fill="primary" size={25} className="text-primary" />
           <h1 className="text-2xl text-primary">E-COMMERCE</h1>
         </div>
         <div className="flex gap-4 text-[0.87rem]">
@@ -48,7 +65,7 @@ const Navbar = () => {
           Cart
         </p>
         <SunMoon
-          onClick={() => setDarkMode((prev) => !prev)}
+          onClick={switchTheme}
           size={22}
           className="text-primary cursor-pointer transition duration-200 hover:scale-105"
         />
