@@ -12,7 +12,7 @@ body {
         --background: 0 0% 100%;
         --foreground: 0 0% 10%;
         --primary: 0 0% 10%;
-        --primary-foreground: 0 0% 98%;
+        --primary-foreground: 0 0% 96%;
         --secondary: 0 0% 96%;
         --secondary-foreground: 0 0% 25%;
         --accent: 0 0% 85%;
@@ -38,7 +38,7 @@ body {
     
     .dark {
         /* Dark Theme Colors */
-        --background: 0 0% 10%;
+        --background: 0 0% 0%;
         --foreground: 0 0% 98%;
         --primary: 0 0% 98%;
         --primary-foreground: 0 0% 10%;
@@ -58,7 +58,7 @@ body {
         --text-inverted: 0 0% 0%; /* Black text in dark mode */
     
         /* Hover Colors */
-        --hover-primary: 0 0% 90%;
+        --hover-primary: 0 0% 85%;
         --hover-secondary: 0 0% 25%;
         --hover-accent: 0 0% 40%;
         --hover-border: 0 0% 35%;

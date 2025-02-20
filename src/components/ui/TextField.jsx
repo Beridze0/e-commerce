@@ -2,8 +2,8 @@ const TextField = () => {
   return (
     <input 
         type="text" 
-        className="w-64 border text-sm placeholder:text-textMuted py-1 px-2 rounded outline-none"
-        placeholder="Search product..."
+        className="w-64 bg-primaryForeground text-sm font-sans placeholder:text-textMuted py-[0.35rem] px-3 rounded-md outline-none placeholder:font-"
+        placeholder="Search for product..."
         />
   )
 }
