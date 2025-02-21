@@ -32,13 +32,13 @@ const Navbar = () => {
 
 
   return (
-    <div className="w-full flex items-center justify-between px-14 py-8 bg-background border-b border-border h-14">
-      <div className="flex gap-7 items-center justify-center">
+    <div className="w-full flex gap-5 items-center justify-between px-14 py-8 bg-background border-b border-border h-14">
+      <div className="flex gap-6 items-center justify-center">
         <div className="flex items-center justify-center gap-2">
-          <Triangle fill="primary" size={25} className="text-primary" />
-          <h1 className="text-2xl text-primary">E-COMMERCE</h1>
+          <Triangle className="text-primary fill-primary sm:size-6 size-5" />
+          <h1 className="sm:block sm:text-2xl text-sm text-primary hidden">E-COMMERCE</h1>
         </div>
-        <div className="flex gap-4 text-[0.87rem]">
+        <div className="sm:flex gap-4 sm:text-[0.87rem] hidden">
           <NavLink className="text-textMuted hover:text-textPrimary transition duration-200">
             Home
           </NavLink>
@@ -55,8 +55,8 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-center gap-4 text-sm">
         <TextField />
-        <div  className="flex items-center justify-center gap-2 border border-border rounded px-4 py-[0.35rem] transition duration-200 text-primary hover:bg-hoverSecondary cursor-pointer">
-          <UserRound size={18} />
+        <div  className="sm:flex hidden items-center justify-center gap-2 border border-border rounded px-4 py-[0.35rem] transition duration-200 text-primary hover:bg-hoverSecondary cursor-pointer">
+          <UserRound className="fill-primary" size={18} />
           <p>
             Profile
           </p>
