@@ -4,7 +4,7 @@ import Navbar from "./components/layout/Navbar";
 
 const App = () => {
   return (
-    <div className="w-full">
+    <div className="w-full text-primary">
       <Navbar />
       <div className="mx-20">
         <AdBanner />
