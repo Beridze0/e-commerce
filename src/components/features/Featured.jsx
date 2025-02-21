@@ -1,6 +1,10 @@
+import ItemCard from "../ui/ItemCard"
+
 const Featured = () => {
   return (
-    <div>Featured</div>
+    <div className="text-primary flex items-center">
+        <ItemCard />
+    </div>
   )
 }
 
