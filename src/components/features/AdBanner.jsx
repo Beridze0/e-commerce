@@ -2,7 +2,7 @@ import laptop from "../../assets/laptop.jpg";
 
 const AdBanner = () => {
   return (
-    <div className="text-primary flex items-center w-full py-7">
+    <div className="text-primary flex items-center w-full py-7 pb-12 border-b border-b-border">
       <div className="w-full h-[500px] border border-border overflow-hidden rounded-xl shadow-lg relative">
         <img
           src={laptop}
@@ -16,7 +16,7 @@ const AdBanner = () => {
             battery life with our latest laptop. Perfect for work, gaming, and
             creativity. Upgrade today!
           </p>
-          <button className="my-8 border border-border py-2 px-6 text-textMuted transition hover:text-primary hover:border-primary">
+          <button className="my-8 border border-border py-2 px-6 text-textMuted transition hover:text-white hover:border-white">
             Shop Now
           </button>
         </div>
