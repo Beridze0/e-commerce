@@ -10,6 +10,7 @@ body {
     :root {
         /* Light Theme Colors */
         --background: 0 0% 100%;
+        --navbar-bg: 0 0% 90%;
         --foreground: 0 0% 10%;
         --primary: 0 0% 10%;
         --primary-foreground: 0 0% 96%;
@@ -39,6 +40,7 @@ body {
     .dark {
         /* Dark Theme Colors */
         --background: 0 0% 0%;
+        --navbar-bg: 0 0% 0% / 92%;
         --foreground: 0 0% 98%;
         --primary: 0 0% 98%;
         --primary-foreground: 0 0% 10%;

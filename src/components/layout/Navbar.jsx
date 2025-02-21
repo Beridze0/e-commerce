@@ -30,13 +30,14 @@ const Navbar = () => {
     });
   };
 
-
   return (
-    <div className="w-full flex gap-5 items-center justify-between px-14 py-8 bg-background border-b border-border h-14">
+    <div className="w-full flex gap-5 items-center justify-between px-14 py-8 bg-navbarbg border-b border-border h-14 sticky top-0 z-50">
       <div className="flex gap-6 items-center justify-center">
         <div className="flex items-center justify-center gap-2">
           <Triangle className="text-primary fill-primary sm:size-6 size-5" />
-          <h1 className="sm:block sm:text-2xl text-sm text-primary hidden">E-COMMERCE</h1>
+          <h1 className="sm:block sm:text-2xl text-sm text-primary hidden">
+            E-COMMERCE
+          </h1>
         </div>
         <div className="sm:flex gap-4 sm:text-[0.87rem] hidden">
           <NavLink className="text-textMuted hover:text-textPrimary transition duration-200">
@@ -55,11 +56,9 @@ const Navbar = () => {
       </div>
       <div className="flex items-center justify-center gap-4 text-sm">
         <TextField />
-        <div  className="sm:flex hidden items-center justify-center gap-2 border border-border rounded px-4 py-[0.35rem] transition duration-200 text-primary hover:bg-hoverSecondary cursor-pointer">
+        <div className="sm:flex hidden items-center justify-center gap-2 border border-border rounded px-4 py-[0.35rem] transition duration-200 text-primary hover:bg-hoverSecondary cursor-pointer">
           <UserRound className="fill-primary" size={18} />
-          <p>
-            Profile
-          </p>
+          <p>Profile</p>
         </div>
         <p className="border dark:border-none rounded px-5 py-[0.35rem] bg-primary text-textInverted transition cursor-pointer duration-200 hover:bg-hoverPrimary">
           Cart

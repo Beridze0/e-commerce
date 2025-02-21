@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         background: "hsl(var(--background))",
+        navbarbg: "hsla(var(--navbar-bg))",
         foreground: "hsl(var(--foreground))",
         primary: "hsl(var(--primary))",
         primaryForeground: "hsl(var(--primary-foreground))",
