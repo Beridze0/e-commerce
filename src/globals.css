@@ -6,6 +6,10 @@ body {
     font-family: 'Inter', sans-serif;
   }
 
+  html, body, #root{
+    width: 100%;
+  }
+
 @layer base {
     :root {
         /* Light Theme Colors */
