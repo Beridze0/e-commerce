@@ -1,6 +1,10 @@
+import Navbar from "./components/layout/Navbar"
+
 const App = () => {
   return (
-    <div>App</div>
+    <div className="text-primary">
+      <Navbar />
+    </div>
   )
 }
 
