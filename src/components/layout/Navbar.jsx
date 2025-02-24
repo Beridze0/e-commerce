@@ -33,7 +33,7 @@ const Navbar = () => {
     <div className="w-full flex items-center justify-between p-4 border-b border-border">
       {/* LOGO with options */}
       <div className="flex items-center justify-center  gap-5">
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 cursor-pointer">
           <Atom className="size-7" />
           <h1 className="text-2xl font">TECHERCE</h1>
         </div>
