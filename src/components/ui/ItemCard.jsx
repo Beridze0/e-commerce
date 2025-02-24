@@ -2,8 +2,8 @@ import computer from "../../assets/computer.jpg";
 
 const ItemCard = () => {
   return (
-    <div className=" flex flex-col gap-1 items-center border rounded-xl w-[260px] h-[250px] cursor-pointer">
-      <div className="max-w-[260px] ">
+    <div className=" flex flex-col border border-border rounded-xl gap-1 items-centerrounded-xl w-[270px] min-w-[270px] h-[260px] cursor-pointer">
+      <div className="max-w-[270px] ">
         <img
           src={computer}
           alt="computer"
