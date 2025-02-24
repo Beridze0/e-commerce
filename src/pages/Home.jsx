@@ -1,6 +1,10 @@
+import Featured from "../components/features/Featured"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="p-5">
+      <Featured />
+    </div>
   )
 }
 
