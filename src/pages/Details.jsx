@@ -10,7 +10,7 @@ const Details = () => {
 
   return (
     <div className="flex gap-10 p-5 px-24">
-      <div className="w-[650px] h-[400px] shrink-0">
+      <div className="w-[650px] h-[570px] shrink-0">
         <img src={computer} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col gap-2">
