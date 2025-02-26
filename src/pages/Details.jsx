@@ -34,9 +34,9 @@ const Details = () => {
         <div className="flex gap-3 w-[65%] flex-col">
           <div className="w-full flex gap-4">
             <div className="flex items-center gap-3 border px-2 py-1.5 w-fit rounded bg-background">
-              <button onClick={dispatch(decrement())} className="px-2">-</button>
+              <button onClick={() => dispatch(decrement())} className="px-2">-</button>
               <p>{quantity}</p>
-              <button onClick={dispatch(increment())} className="px-2">+</button>
+              <button onClick={() => dispatch(increment())} className="px-2">+</button>
             </div>
             <div className="w-full">
               <button className="w-full flex items-center justify-center gap-2 border h-full rounded font-bold hover:bg-hoverSecondary">
