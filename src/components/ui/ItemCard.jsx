@@ -1,8 +1,9 @@
 import computer from "../../assets/computer.jpg";
+import {Link} from 'react-router-dom'
 
 const ItemCard = () => {
   return (
-    <div className=" flex flex-col border border-border rounded-xl gap-1 items-centerrounded-xl w-[270px] min-w-[270px] h-[260px] cursor-pointer">
+    <Link to={'details/1'} className=" flex flex-col border border-border rounded-xl gap-1 items-centerrounded-xl w-[270px] min-w-[270px] h-[260px] cursor-pointer">
       <div className="max-w-[270px] ">
         <img
           src={computer}
@@ -16,7 +17,7 @@ const ItemCard = () => {
         </p>
         <p className="text-xs">Price: $1000</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
