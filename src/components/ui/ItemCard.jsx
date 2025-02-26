@@ -1,7 +1,7 @@
 import computer from "../../assets/computer.jpg";
 import {Link} from 'react-router-dom'
 
-const ItemCard = () => {
+const ItemCard = ({details}) => {
   return (
     <Link to={'details/1'} className=" flex flex-col border border-border rounded-xl gap-1 items-centerrounded-xl w-[270px] min-w-[270px] h-[260px] cursor-pointer">
       <div className="max-w-[270px] ">
@@ -13,9 +13,9 @@ const ItemCard = () => {
       </div>
       <div className="p-1">
         <p className="font-bold text-[0.8rem]">
-          Apple PC <span className="font-normal">- M2 Chip, 16GB RAM, 512GB SSD</span>
+          {details.name} <span className="font-normal">- M2 Chip, 16GB RAM, 512GB SSD</span>
         </p>
-        <p className="text-xs">Price: $1000</p>
+        <p className="text-xs">Price: {details.price}</p>
       </div>
     </Link>
   );

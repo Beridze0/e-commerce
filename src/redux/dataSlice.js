@@ -12,5 +12,5 @@ const dataSlice = createSlice({
     }
 })
 
-export default { setTechData } = dataSlice.actions
+export const { setTechData } = dataSlice.actions
 export default dataSlice.reducer
