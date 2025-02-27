@@ -10,10 +10,12 @@ import data from './data/productData.json'
 const App = () => {
 
   const dispatch = useDispatch()
+  
 
   useEffect(()=>{
     dispatch(setTechData(data))
   },[dispatch])
+  
 
   return (
     <div className="text-primary">
