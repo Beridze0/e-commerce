@@ -14,6 +14,7 @@ const ItemCard = ({ details }) => {
       </div>
       <div className="p-1">
         <p className="font-bold text-[0.8rem]">
+          {details.name}
            <span className="font-normal">- M2 Chip, 16GB RAM, 512GB SSD</span>
         </p>
         <p className="text-xs">Price: {details.Price}</p>
@@ -33,7 +34,7 @@ ItemCard.propTypes = {
     Storage: PropTypes.string.isRequired,
     Display: PropTypes.string.isRequired,
     Battery: PropTypes.string.isRequired,
-    Price: PropTypes.string.isRequired,  // Keep it as a string since it's formatted with "$"
+    Price: PropTypes.string.isRequired,
   }).isRequired
 };
 
