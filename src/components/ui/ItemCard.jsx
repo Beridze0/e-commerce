@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ItemCard = ({ details }) => {
   return (
-    <Link to={'details/1'} className=" flex flex-col border border-border rounded-xl gap-1 items-centerrounded-xl w-[270px] min-w-[270px] h-[260px] cursor-pointer">
+    <Link to={`details/${details.name}`} className=" flex flex-col border border-border rounded-xl gap-1 items-centerrounded-xl w-[270px] min-w-[270px] h-[260px] cursor-pointer">
       <div className="max-w-[270px] ">
         <img
           src={computer}
@@ -15,7 +15,7 @@ const ItemCard = ({ details }) => {
       <div className="p-1">
         <p className="font-bold text-[0.8rem]">
           {details.name}
-           <span className="font-normal">- M2 Chip, 16GB RAM, 512GB SSD</span>
+           <span className="font-normal"> - {details.description.slice(0, 50)}</span>
         </p>
         <p className="text-xs">Price: {details.Price}</p>
       </div>
@@ -35,6 +35,7 @@ ItemCard.propTypes = {
     Display: PropTypes.string.isRequired,
     Battery: PropTypes.string.isRequired,
     Price: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
   }).isRequired
 };
 

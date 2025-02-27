@@ -14,7 +14,7 @@ const Featured = () => {
         </div>
         <div className="flex items-center gap-3">
             {
-              techData.map((item, index)=>(
+              techData.slice(0,5).map((item, index)=>(
                 <ItemCard key={index} details={item} />
               ))
             }
