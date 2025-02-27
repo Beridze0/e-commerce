@@ -5,18 +5,27 @@ import { increment, decrement } from "../redux/quantitySlice";
 import { useParams } from "react-router-dom";
 
 const Details = () => {
-  const quantity = useSelector((state) => state.quantity.value);
+  const {name} = useParams();
   const techData = useSelector((state) => state.data.techData);
+  const quantity = useSelector((state) => state.quantity.quantities[name] || 0);
   const dispatch = useDispatch();
 
-  const {name} = useParams();
   const techDetails = techData.find((tech) => tech.name == name);
 
-  
 
   if(!techDetails){
     return <p>Product not found!</p>
   }
+
+
+  const handleIncrement = () => {
+    dispatch(increment(name));
+  };
+
+  const handleDecrement = () => {
+    dispatch(decrement(name));
+  };
+
 
   return (
     <div className="flex gap-10 p-5 px-24">
@@ -35,11 +44,11 @@ const Details = () => {
         <div className="flex gap-3 w-[65%] flex-col">
           <div className="w-full flex gap-4">
             <div className="flex items-center gap-3 border px-2 py-1.5 w-fit rounded bg-background">
-              <button onClick={() => dispatch(decrement())} className="px-2">
+              <button onClick={handleDecrement} className="px-2">
                 -
               </button>
               <p>{quantity}</p>
-              <button onClick={() => dispatch(increment())} className="px-2">
+              <button onClick={handleIncrement} className="px-2">
                 +
               </button>
             </div>
