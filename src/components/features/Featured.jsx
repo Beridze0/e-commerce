@@ -4,7 +4,18 @@ import { useSelector } from "react-redux"
 
 const Featured = () => {
 
+  
+  
   const techData = useSelector((state) => state.data.techData)
+
+
+  const getRandomProducts = (arr, count) => {
+    return [...arr]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, count);
+  };
+  
+  const randomProducts = getRandomProducts(techData, 5)
 
   return (
     <div className="flex flex-col gap-4 mt-5">
@@ -14,7 +25,7 @@ const Featured = () => {
         </div>
         <div className="flex items-center gap-3">
             {
-              techData.slice(0,5).map((item, index)=>(
+              randomProducts.map((item, index)=>(
                 <ItemCard key={index} details={item} />
               ))
             }
