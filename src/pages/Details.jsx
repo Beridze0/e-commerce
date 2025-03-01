@@ -5,18 +5,16 @@ import { increment, decrement } from "../redux/quantitySlice";
 import { useParams } from "react-router-dom";
 
 const Details = () => {
-  const {name} = useParams();
+  const { name } = useParams();
   const techData = useSelector((state) => state.data.techData);
   const quantity = useSelector((state) => state.quantity.quantities[name] || 0);
   const dispatch = useDispatch();
 
   const techDetails = techData.find((tech) => tech.name == name);
 
-
-  if(!techDetails){
-    return <p>Product not found!</p>
+  if (!techDetails) {
+    return <p>Product not found!</p>;
   }
-
 
   const handleIncrement = () => {
     dispatch(increment(name));
@@ -26,18 +24,20 @@ const Details = () => {
     dispatch(decrement(name));
   };
 
-
   return (
     <div className="flex gap-10 p-5 px-24">
       <div className="w-[650px] h-[570px] shrink-0">
-        <img src={computer} alt={techDetails.name} className="w-full h-full object-cover" />
+        <img
+          src={computer}
+          alt={techDetails.name}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="flex flex-col gap-2">
         <p className="font-bold text-lg">
-          {techDetails.name} - {techDetails.description}</p>
-        <p className="text-textMuted text-sm">
-          {techDetails.description}
+          {techDetails.name} - {techDetails.description}
         </p>
+        <p className="text-textMuted text-sm">{techDetails.description}</p>
         <p className="text-lg font-bold">
           Price: <span className="font-normal">{techDetails.Price}</span>
         </p>
@@ -61,6 +61,22 @@ const Details = () => {
           <button className="border py-1.5 rounded hover:bg-hoverSecondary">
             Add to Cart
           </button>
+        </div>
+{/* "category": "Tablet",
+    "name": "SlatePad X7",
+    "RAM": "4GB LPDDR4",
+    "CPU": "MediaTek Helio G95",
+    "GPU": "Mali-G76",
+    "Storage": "128GB eMMC",
+    "Display": "10.4-inch IPS",
+    "Battery": "7 hours", */}
+        <div className="flex flex-col gap-">
+            <p className="font-bold">Name: <span className="font-normal">{techDetails.name}</span></p>
+            <p className="font-bold">RAM: <span className="font-normal">{techDetails.RAM}</span></p>
+            <p className="font-bold">CPU: <span className="font-normal">{techDetails.CPU}</span></p>
+            <p className="font-bold">Storage: <span className="font-normal">{techDetails.Storage}</span></p>
+            <p className="font-bold">Display: <span className="font-normal">{techDetails.Display}</span></p>
+            <p className="font-bold">Battery: <span className="font-normal">{techDetails.Battery}</span></p>
         </div>
       </div>
     </div>
